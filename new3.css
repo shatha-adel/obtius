@@ -128,7 +128,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* font-size: 4vw; */
     color: #0b0b0b
 }
