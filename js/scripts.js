@@ -181,14 +181,14 @@ var currentTimeScale = gsap.globalTimeline.timeScale();
 var img = document.querySelectorAll('.wrapper img');
 img.forEach(function (e) {
 
-    e.addEventListener('mouseenter', () => {
+    e.addEventListener('mouseover', () => {
 
         particles.timeScale(0.1);
 
         const author = e.src.split('/').pop().split('.')[0];
         caption2.textContent = `By ${authors[author - 1]}`;
     });
-    e.addEventListener('mouseleave', () => {
+    e.addEventListener('mouseout', () => {
         particles.timeScale(0.2);
         caption2.textContent = 'Office Oblitas';
     });
