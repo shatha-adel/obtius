@@ -135,7 +135,6 @@ const containerStyle = getComputedStyle(container);
 const containerWidth = containerStyle.width;
 const containerHeight = containerStyle.height;
 
-console.log(containerWidth, containerHeight);
 
 
 var sizes = ["100", "150", "200"],
@@ -177,7 +176,6 @@ for (var i = 0; i < 11; i++) {
 }
 gsap.to(particles, 2, { timeScale: 0.5, ease: Power1.easeIn });
 var currentTimeScale = gsap.globalTimeline.timeScale();
-console.log(currentTimeScale)
 var img = document.querySelectorAll('.wrapper img');
 img.forEach(function (e) {
 
@@ -203,7 +201,6 @@ function randomNumber(min, max) {
 
 
 let linkElements = document.querySelectorAll('nav a');
-console.log(linkElements)
    
 linkElements.forEach((element, i) => {
 
