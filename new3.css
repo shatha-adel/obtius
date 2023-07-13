@@ -35,7 +35,6 @@ html {
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: Styrene Medium A,sans-serif;
     /* font-size: 1.5rem; */
     /* text-transform: uppercase; */
     overflow: hidden
@@ -230,12 +229,7 @@ nav a {
 
 
 
-/* Info Nav Button Icon */
-.info-nav-icon {
-  width: 30px;
-  height: 30px;
-  fill: #555;
-}
+
 
 @font-face {
     font-family: 'styrene A';
@@ -395,12 +389,12 @@ nav a {
 
 /* Info Nav Button Icon */
 .info-nav-icon {
-    width: 30px;
+    /* width: 30px;
     height: 30px;
     fill: #555;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 
@@ -475,8 +469,29 @@ nav a {
 }
 
 
-.fa-ellipsis{
-    font-size: 2rem;
+
+
+.blend  {
+    mix-blend-mode: difference;
+    color: black;
+    
+  }
+
+  .red {
+    color: white;
+  }
+  
+
+  body,html {
+    background:#EAF7E1;
+  
 }
 
+.fa-ellipsis{
+    font-size: 2rem;
+    color: white !important;
+}
 
+.close{
+    color: white !important;
+}
