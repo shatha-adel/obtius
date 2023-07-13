@@ -8,15 +8,17 @@ var isMobile = !1,
     work = {},
     info = {};
 var authors = [
-'Author 1', 
-'Author 2',
- 'Author 3', 
- 'Author 4', 
- 'Author 5', 
- 'Author 6', 
- 'Author 7', 
- 'Author 8', 
- 'Author 9', 'Author 10', 'Author 11'];
+'Author 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+'Author 2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.',
+ 'Author 3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+ 'Author 4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+ 'Author 5 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+ 'Author 6 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+ 'Author 7 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+ 'Author 8 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+ 'Author 9 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.',
+  'Author 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.' , 
+  'Author 11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.' ];
 const positions = [{
     top: 0,
     left: 0
