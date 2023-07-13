@@ -109,7 +109,7 @@ const imagesCount = images.length;
 function closeIntro() {
     var t = document.querySelector(".intro")
         , e = document.querySelector("main");
-    tl.to(t, 1, {
+    tl.to(t, 5, {
         opacity: 0,
         ease: "power1.easeOut",
         onComplete: function () {
