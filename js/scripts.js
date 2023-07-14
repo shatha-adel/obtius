@@ -192,7 +192,30 @@ img.forEach(function (e) {
         particles.timeScale(0.2);
         caption2.textContent = 'Office Oblitas';
     });
+    e.addEventListener('click', () => {
+
+        particles.timeScale(0.1);
+
+        const author = e.src.split('/').pop().split('.')[0];
+        caption2.textContent = `By ${authors[author - 1]}`;
+    });
+    e.addEventListener('click', () => {
+        console.log('1111')
+        particles.timeScale(0.1);
+
+        const author = e.src.split('/').pop().split('.')[0];
+        caption2.textContent = `By ${authors[author - 1]}`;
+    });
+   
 });
+
+
+document.querySelector('.abs').addEventListener('click', () => {
+    console.log('222')
+    particles.timeScale(0.2);
+        caption2.textContent = 'Office Oblitas';
+});
+
 
 
 
