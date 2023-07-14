@@ -225,7 +225,7 @@ img {
     color: #0b0b0b
 }
 
-.desc {
+.desc,ul {
     max-width: 250px;
     padding:  3rem;
     
@@ -399,3 +399,10 @@ color: white;
     cursor: pointer;
 
 }
+
+/* 
+.box1,.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
