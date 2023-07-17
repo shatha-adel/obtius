@@ -213,6 +213,7 @@ nav a {
     /* padding:  3rem;     */
 }
 
+
 .homepage {
     width: 100vw;
     height: 100vh
@@ -265,8 +266,14 @@ body,html {
 }
 
 .fa-ellipsis{
+
     font-size: 2rem;
     color: white !important;
+}
+
+.box3{
+    margin-bottom: -6px;
+
 }
 
 .close{
