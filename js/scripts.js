@@ -94,16 +94,16 @@ const wrapper = document.querySelector('.wrapper');
 const scrollable = document.querySelector('.scrollable');
 const caption2 = document.querySelector('nav p')
 const images = [
-    'images/1_comis.jpg',
-    'images/2_hem.jpg',
-    'images/3_orbit.jpg',
-    'images/4_eoe.jpeg',
-    'images/5_b&b.jpg',
-    'images/6_designsweden.jpg',
-    'images/1.jpg',
-    'images/2.jpg',
-    'images/3.jpg',
-    'images/4.jpg'
+    'a.jpg',
+    'b.jpg',
+    'c.jpg',
+    'd.jpg',
+    'g.jpg',
+    'f.jpg',
+    'j.jpg',
+    'k.jpg',
+    'l.jpg',
+    'm.jpg'
 ];
 const tl = gsap.timeline();
 
@@ -143,25 +143,24 @@ var sizes = ["100", "150", "200"],
     bu = document.querySelector(".wrapper"),
 
     startY = 700,
-    endY = -400;
+    endY = 0;
 
 // //build the timeline
 
 var particles = gsap.timeline({});
 
-for (var i = 0; i < 11; i++) {
+for (var i = 0; i < images.length; i++) {
     var sizeIndex = randomNumber(0, 2);
     var size = sizes[sizeIndex];
     var speed = 3 - sizeIndex;
 
-    var bubble = $('<img src="images/' + (i + 1) + '.jpg" idx="' + (i + 1) + '" alt="">').appendTo(
+    var bubble = $('<img src="images/' + images[i] + '" idx="' + images[i] + '" alt="">').appendTo(
         bu
     );
 
 
 
     particles.set(bubble, { y: startY, x: "random(-200, 1200, 5)" }, 0);
-
     particles.to(
         bubble,
         {
@@ -184,9 +183,10 @@ img.forEach(function (e) {
     e.addEventListener('mouseover', () => {
 
         particles.timeScale(0.1);
+        
 
         const author = e.src.split('/').pop().split('.')[0];
-        caption2.textContent = `By ${authors[author - 1]}`;
+        caption2.textContent = `By ${authors[images.indexOf(e.src.split('/').pop())]}`;
     });
     e.addEventListener('mouseout', () => {
         particles.timeScale(0.2);
@@ -196,16 +196,9 @@ img.forEach(function (e) {
 
         particles.timeScale(0.1);
 
-        const author = e.src.split('/').pop().split('.')[0];
-        caption2.textContent = `By ${authors[author - 1]}`;
+        caption2.textContent = `By ${authors[images.indexOf(e.src.split('/').pop())]}`;
     });
-    e.addEventListener('click', () => {
-        console.log('1111')
-        particles.timeScale(0.1);
-
-        const author = e.src.split('/').pop().split('.')[0];
-        caption2.textContent = `By ${authors[author - 1]}`;
-    });
+    
    
 });
 
