@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'styrene A';
-    src: url('fonts/Styrene A (wf-rip)/StyreneA-Regular.otf') format('woff');
+    src: url('fonts/Styrene A (wf-rip)/StyreneA-Medium.otf') format('woff');
 }
 
 * {
@@ -53,36 +53,11 @@ html {
     background-color: #eceff1;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width:812px),screen and (max-width:700px) {
-    body {
-        font-size:3vmin
-    }
-}
-
-@media only screen and (min-width: 1441px) {
-    body {
-        font-size:1.041vw
-    }
-}
-@media only screen and (max-width: 950px) {
-    body {
-        font-size:12px
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    body {
-        font-size:10px;
-    }
-}
-
-@media only screen and (max-width: 396px) {
-    body {
-        font-size:9px
-    }
-}
 
 
+.box-c{
+    overflow-y: scroll;
+}
 
 
 .landing.to-home main {
