@@ -2,14 +2,6 @@
 @font-face {
     font-family: 'styrene A';
     src: url('fonts/Styrene A (wf-rip)/StyreneA-Medium.otf') format('woff');
-    font-weight: normal;
-}
-
-
-@font-face {
-    font-family: 'styrene A';
-    src: url('fonts/Styrene A (wf-rip)/StyreneA-bold.otf') format('woff');
-    font-weight: bold;
 }
 
 * {
@@ -39,7 +31,7 @@ a {
 
 
 body {
-    line-height: 1.2;
+    /* line-height: 1.2; */
     overflow: hidden;
     font-size: 14px;
 }
