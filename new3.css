@@ -52,7 +52,7 @@ img {
 }
 
 html {
-    /* font-size: 10px; */
+    font-size: 10px;
     scroll-behavior: smooth;
 }
 
@@ -232,9 +232,8 @@ nav a {
 .box3{
     visibility: visible;
 }
-.desc{
-    visibility: visible;
-
+desc{
+    
 }
 
 .box-c{
