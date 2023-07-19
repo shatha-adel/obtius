@@ -18,7 +18,10 @@ var authors = [
  'Author 8 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
  'Author 9 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.',
   'Author 10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.' , 
-  'Author 11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.' ];
+  'Author 11 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+  'Author 12 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem eos ab voluptate nihil quibusdam ullam odio, minima magnam accusamus illum nostrum rem, tempora facere autem ut praesentium laboriosam eaque amet.', 
+
+];
 const positions = [{
     top: 0,
     left: 0
@@ -94,16 +97,19 @@ const wrapper = document.querySelector('.wrapper');
 const scrollable = document.querySelector('.scrollable');
 const caption2 = document.querySelector('nav p')
 const images = [
-    'a.jpg',
-    'b.jpg',
-    'c.jpg',
-    'd.jpg',
-    'g.jpg',
-    'f.jpg',
-    'j.jpg',
-    'k.jpg',
-    'l.jpg',
-    'm.jpg'
+    '1_comis.jpg',
+    '2_hem.jpg',
+    '18_on.png',
+    '25_tomwood.png',
+    '1_comis.jpg',
+    '2_hem.jpg',
+    '18_on.png',
+    '25_tomwood.png',
+    '1_comis.jpg',
+    '2_hem.jpg',
+    '18_on.png',
+    '25_tomwood.png',
+
 ];
 const tl = gsap.timeline();
 
@@ -111,14 +117,14 @@ const imagesCount = images.length;
 function closeIntro() {
     var t = document.querySelector(".intro")
         , e = document.querySelector("main");
-    tl.to(t, 5, {
+    tl.to(t, 1, {
         opacity: 0,
         ease: "power1.easeOut",
         onComplete: function () {
             t.remove()
         }
     });
-    tl.to(e, 3, {
+    tl.to(e, 1, {
         opacity: 1,
         ease: "power1.easeInOut"
     });
@@ -157,13 +163,15 @@ for (var i = 0; i < images.length; i++) {
     var bubble = $('<img src="images/' + images[i] + '" idx="' + images[i] + '" alt="">').appendTo(
         bu
     );
+    var randomVar =Math.floor(Math.random() * (window.screen.width - 0 + 1) + 0)
+    console.log(randomVar)
 
 
-    particles.set(bubble, { y: window.screen.height, x: "random([300, 1000])" }, 0);
+    particles.set(bubble, { y: window.screen.height, x: randomVar }, 0);
     particles.to(
         bubble,
         {
-            duration: speed*6,
+            duration: 15,
             y: endY,
             x:"random([+=100+someVar, -=100+someVar])",
             // repeatDelay: Math.random() * 2,
@@ -226,10 +234,11 @@ linkElements.forEach((element, i) => {
         if (document.querySelector(".box1").style.visibility=='visible'){
             document.querySelector(".box1").style.visibility='hidden'
             document.querySelector(".box3").style.visibility='visible'
-           
+            document.querySelector(".desc").style.visibility='visible'
         }else{
             document.querySelector(".box1").style.visibility='visible'
             document.querySelector(".box3").style.visibility='hidden'
+            document.querySelector(".desc").style.visibility='hidden'
   
         }
         
