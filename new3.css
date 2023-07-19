@@ -58,7 +58,7 @@ html {
 
 
 .to-index body,.to-info body {
-    background: #EAF7E1
+    background-color: #eceff1;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width:812px),screen and (max-width:700px) {
@@ -100,7 +100,7 @@ html {
 section {
     width: 100%;
     height: 100vh;
-    background: #fff
+    background-color: #eceff1;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width:812px),screen and (max-width:700px) {
@@ -163,18 +163,6 @@ nav a {
     background: none
 }
 
-.homepage .wrapper {
-    width: 100%;
-    height: 100%;
-    position: relative;
-   background-color: #eceff1;
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    overflow: hidden
-}
-
-
 .homepage img {
     
     position: absolute;
@@ -203,7 +191,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 2vw;
     
     color: #0b0b0b
 }
@@ -262,7 +250,8 @@ color: white;
 
 
 body,html {
-    background:#EAF7E1; 
+    background-color: #eceff1;
+
 }
 
 .fa-ellipsis{

@@ -138,12 +138,12 @@ const containerWidth = containerStyle.width;
 const containerHeight = containerStyle.height;
 
 
+console.log(window.screen.height)
 
 var sizes = ["100", "150", "200"],
     bu = document.querySelector(".wrapper"),
-
     startY = 700,
-    endY = 0;
+    endY = -window.screen.height;
 
 // //build the timeline
 
@@ -159,18 +159,18 @@ for (var i = 0; i < images.length; i++) {
     );
 
 
-
-    particles.set(bubble, { y: startY, x: "random(-200, 1200, 5)" }, 0);
+    particles.set(bubble, { y: window.screen.height, x: "random([300, 1000])" }, 0);
     particles.to(
         bubble,
         {
             duration: speed*6,
             y: endY,
-            x: randomNumber(0, 1000),
+            x:"random([+=100+someVar, -=100+someVar])",
             // repeatDelay: Math.random() * 2,
             repeat: -1
         },
-        Math.random() * 2
+        Math.random() * 10
+
     );
 
 
