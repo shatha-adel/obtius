@@ -57,6 +57,7 @@ html {
 
 .box-c{
     overflow-y: scroll;
+
 }
 
 
@@ -97,11 +98,11 @@ nav {
 
 nav li{
       position: absolute;
-    right: 3rem;
+    right: 2rem;
     bottom: 0rem; 
 }
 .desc{
-    padding-left: 3rem;
+    padding-left: 2rem;
     
 }
 
@@ -194,6 +195,7 @@ desc{
 .box-c{
     background-color: #EAF7E1;
     padding: 3rem ;
+    padding-right: 5rem;
 }
 
 .blend  {
@@ -254,3 +256,4 @@ body,html {
     
     color: #0b0b0b
 }
+
