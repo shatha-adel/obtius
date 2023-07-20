@@ -91,7 +91,7 @@ nav {
     justify-content: space-between;
 
     position: fixed;
-    bottom: 3rem;
+    bottom: 1.5rem;
     
 }
 
@@ -214,7 +214,7 @@ body,html {
 
 .fa-ellipsis{
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white !important;
 }
 
