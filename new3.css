@@ -30,6 +30,7 @@ a {
 }
 
 
+
 body {
     /* line-height: 1.2; */
     overflow: hidden;
@@ -256,9 +257,13 @@ body,html {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2vw!important;
+    font-size: 24px;
     
-    color: #0b0b0b
+    color: #000
+}
+
+h1{
+    font-size: 24px;
 }
 
 
