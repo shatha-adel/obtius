@@ -42,19 +42,20 @@ const images = [
 
 ];
 const tl = gsap.timeline();
-
+tl.delay(4)
 const imagesCount = images.length;
 function closeIntro() {
     var t = document.querySelector(".intro")
         , e = document.querySelector("main");
-    tl.to(t, 4, {
+    tl.to(t, 2, {
         opacity: 0,
         ease: "power1.easeOut",
         onComplete: function () {
             t.remove()
         }
     });
-    tl.to(e, 3, {
+
+    tl.to(e, 1, {
         opacity: 1,
         ease: "power1.easeInOut"
     });
