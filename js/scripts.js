@@ -75,8 +75,6 @@ const containerWidth = containerStyle.width;
 const containerHeight = containerStyle.height;
 
 
-console.log(window.screen.height)
-
 var sizes = ["100", "150", "200"],
     bu = document.querySelector(".wrapper"),
     startY = 700,
@@ -95,7 +93,6 @@ for (var i = 0; i < images.length; i++) {
         bu
     );
     var randomVar =Math.floor(Math.random() * (window.screen.width - 0 + 1) + 0)
-    console.log(randomVar)
 
 
     particles.set(bubble, { y: window.screen.height, x: randomVar }, 0);
@@ -143,7 +140,6 @@ img.forEach(function (e) {
 
 
 document.querySelector('.abs').addEventListener('click', () => {
-    console.log('222')
     particles.timeScale(0.2);
         caption2.textContent = 'Office Oblitas';
 });
