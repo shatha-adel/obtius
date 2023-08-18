@@ -149,6 +149,12 @@ a {
 
 }
 
+@media screen and (max-device-width: 1000px) {
+    .homepage img {
+        height: 40vw
+    }
+}
+
 @media screen and (max-device-width: 480px) {
     .homepage img {
         height: 50vw
