@@ -164,10 +164,14 @@ linkElements.forEach((element, i) => {
             document.querySelector(".box1").style.display ='none'
             document.querySelector(".box3").style.display ='block'
             document.querySelector(".desc").style.display ='block'
+            document.querySelector(".box-a").style.display ='block'
+            document.querySelector(".box-c").style.display ='none'
         }else{
             document.querySelector(".box1").style.display ='block'
             document.querySelector(".box3").style.display ='none'
             document.querySelector(".desc").style.display ='none'
+            document.querySelector(".box-a").style.display ='none'
+            document.querySelector(".box-c").style.display ='block'
   
         }
     });
