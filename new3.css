@@ -168,7 +168,6 @@ a {
 .desc,
 ul {
     max-width: 250px;
-    /* padding:  3rem;     */
 }
 
 
@@ -196,14 +195,16 @@ ul {
 }
 
 .box1 {
-    visibility: hidden;
+    display : none;
 }
 
 .box3 {
-    visibility: visible;
+    display : block;
 }
 
-desc {}
+desc {
+    display : block;
+}
 
 .box-c {
     background-color: #EAF7E1;

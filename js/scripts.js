@@ -158,18 +158,17 @@ let linkElements = document.querySelectorAll('nav a');
 linkElements.forEach((element, i) => {
 
     element.addEventListener("click", e => {
-        if (document.querySelector(".box1").style.visibility=='visible'){
-            document.querySelector(".box1").style.visibility='hidden'
-            document.querySelector(".box3").style.visibility='visible'
-            document.querySelector(".desc").style.visibility='visible'
+        console.log(element)
+        if (document.querySelector(".box1").style.display =='block'){
+            document.querySelector(".box1").style.display ='none'
+            document.querySelector(".box3").style.display ='block'
+            document.querySelector(".desc").style.display ='block'
         }else{
-            document.querySelector(".box1").style.visibility='visible'
-            document.querySelector(".box3").style.visibility='hidden'
-            document.querySelector(".desc").style.visibility='hidden'
+            document.querySelector(".box1").style.display ='block'
+            document.querySelector(".box3").style.display ='none'
+            document.querySelector(".desc").style.display ='none'
   
         }
-        
-
     });
 });
 
