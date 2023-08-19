@@ -158,7 +158,8 @@ let linkElements = document.querySelectorAll('nav a');
 linkElements.forEach((element, i) => {
 
     element.addEventListener("click", e => {
-        console.log(element)
+
+        console.log(document.querySelector(".box1").style.display, document.querySelector(".box3").style.display)
         if (document.querySelector(".box1").style.display =='block'){
             document.querySelector(".box1").style.display ='none'
             document.querySelector(".box3").style.display ='block'
