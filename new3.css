@@ -280,23 +280,23 @@ html {
 
 @media only screen and (max-width: 480px) {
     nav {
-        bottom: 11px;
+        bottom: 14px;
 
     }
 
     nav li {
-        right: 11px;
+        right: 14px;
     }
 
     .desc {
-        padding-left: 11px;
+        padding-left: 14px;
 
     }
 
     .box-c {
 
-        padding: 11px;
-        padding-right: 3rem;
+        padding: 14px;
+        padding-right: 4rem;
     }
 
     .intro  h1{
