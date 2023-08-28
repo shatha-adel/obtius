@@ -178,12 +178,13 @@ linkElements.forEach((element, i) => {
 });
 
 
-const box = document.querySelector('.wrapper');
-
-box.addEventListener('dragstart', event => {
+const imagesDrag = document.querySelectorAll('img');
+imagesDrag.forEach((element, i) => {
+    element.addEventListener('dragstart', event => {
   event.preventDefault();
 });
 
-box.addEventListener('drop', event => {
+element.addEventListener('drop', event => {
   event.preventDefault();
 });
+})
